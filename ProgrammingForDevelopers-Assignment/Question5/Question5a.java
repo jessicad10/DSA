@@ -72,6 +72,7 @@ class MazePanel extends JPanel {
         stack.push(start);
 
         while (!stack.isEmpty()) {
+            
             Cell current = stack.pop();
             if (current.visited || current.isWall) continue;
             current.visited = true;
